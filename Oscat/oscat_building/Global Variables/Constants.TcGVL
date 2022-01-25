@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <GVL Name="Constants" Id="{a1316a45-0d3d-4180-a8a2-478b70f4dd95}">
+    <Declaration><![CDATA[{attribute 'Tc2GvlVarNames'}
+VAR_GLOBAL CONSTANT
+END_VAR
+
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,5 @@
+Changes made to make the original library compile correctly
+* _BUFFER_CLEAR		uses PVOID instead of DWORD for pointer calculations
+* _BUFFER_INIT		uses PVOID instead of DWORD for pointer calculations
+* STRING(STRING_LENGTH)		replaced with T_MaxString
+

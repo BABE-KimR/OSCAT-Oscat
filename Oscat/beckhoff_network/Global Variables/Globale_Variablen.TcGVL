@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <GVL Name="Globale_Variablen" Id="{9a988242-7a4a-46b9-a61e-7b82d5f9d9b1}">
+    <Declaration><![CDATA[{attribute 'Tc2GvlVarNames'}
+VAR_GLOBAL
+	TCP_SERVER_RESET : BYTE; (* nur für TwinCAT notwendig ! *)
+	LOG_CL : LOG_CONTROL;
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

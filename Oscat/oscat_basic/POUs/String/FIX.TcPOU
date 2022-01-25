@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="FIX" Id="{b4b8fd8b-a823-4d39-9ffe-dba928e177fe}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION FIX : T_MaxString
+VAR_INPUT
+	str : T_MaxString;
+	L : INT;
+	C : BYTE;
+	M : INT;
+END_VAR
+VAR
+	N : INT;
+	SX: T_MaxString;
+END_VAR
+
+(*
+version 1.0	29. mar. 2008
+programmer 	hugo
+tested by	tobias
+
+the function fix truncates a string at length L 
+or if the string is shorter then L it will be filled with ending Spaces till its length = N.
+
+*)]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(* make sure L does not exceed the limits of a string *)
+N := TO_INT(LIMIT(0,TO_DINT(L),TO_DINT(MAX_STRING_LENGTH)) - LEN(str));
+IF N <= 0 THEN
+	(* truncate the string at length N *)
+	IF M = 1 THEN
+		FIX := RIGHT(str,L);
+	ELSE
+		FIX := LEFT(str,L);
+	END_IF;
+ELSIF M = 1 THEN
+	(* connect fill characters at the beginning *)
+	sx := FILL(C,N);
+	FIX := CONCAT(sx,str);
+ELSIF M = 2 THEN
+	(* center str beween fill characters *)
+	(* for an uneven number of fill characters, there is one more at the end *)
+	sx := FILL(C,SHR(N+1,1));
+	FIX := CONCAT(str,sx);
+	SX := LEFT(sx,SHR(N,1));
+	FIX := CONCAT(sx,FIX);
+ELSE
+	(* connect fill characters at the end *)
+	SX := FILL(C,N);
+	FIX := CONCAT(str,SX);
+END_IF;
+
+
+(* revision histroy
+hm	29. mar. 2008	rev 1.0
+	original release
+
+*)]]></ST>
+    </Implementation>
+    <LineIds Name="FIX">
+      <LineId Id="21" Count="31" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

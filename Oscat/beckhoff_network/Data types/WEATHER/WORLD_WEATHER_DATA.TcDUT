@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="WORLD_WEATHER_DATA" Id="{528d4075-11c4-4a9a-95a1-af5cf6b475ea}">
+    <Declaration><![CDATA[TYPE WORLD_WEATHER_DATA :
+STRUCT
+	CUR : WORLD_WEATHER_CUR;
+	DAY : ARRAY [0..4] OF WORLD_WEATHER_DAY;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

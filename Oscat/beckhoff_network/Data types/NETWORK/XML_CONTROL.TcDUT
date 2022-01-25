@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="XML_CONTROL" Id="{3d7166af-c456-4248-8005-79f8e03e58ff}">
+    <Declaration><![CDATA[TYPE XML_CONTROL :
+STRUCT
+	COMMAND : WORD;
+	WATCHDOG : TIME;
+	START_POS : UINT;
+	STOP_POS : UINT;
+	COUNT : UINT;
+	TYP : INT;
+	LEVEL : UINT;
+	PATH : T_MaxString;
+	ELEMENT : T_MaxString;
+	ATTRIBUTE : T_MaxString;
+	VALUE : T_MaxString;
+	BLOCK1_START : UINT;
+	BLOCK1_STOP : UINT;
+	BLOCK2_START : UINT;
+	BLOCK2_STOP : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

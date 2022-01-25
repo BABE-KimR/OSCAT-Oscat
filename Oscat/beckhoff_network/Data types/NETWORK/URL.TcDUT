@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="URL" Id="{b8bf903f-8d5f-4e9a-8f6d-fd20334bbaa7}">
+    <Declaration><![CDATA[TYPE URL :
+STRUCT
+	PROTOCOL : STRING(10);
+	USER : STRING(32);
+	PASSWORD : STRING(32);
+	DOMAIN : STRING(80);
+	PORT : WORD;
+	PATH : STRING(80);
+	QUERY : T_MaxString;
+	ANCHOR : STRING(40);
+	HEADER : STRING(160);
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

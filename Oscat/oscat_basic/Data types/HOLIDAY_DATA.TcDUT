@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="HOLIDAY_DATA" Id="{f80319ed-822a-491f-b7da-f08d61955020}">
+    <Declaration><![CDATA[TYPE HOLIDAY_DATA :
+STRUCT
+	NAME : STRING(30);
+	DAY : SINT;
+	MONTH : SINT;
+	USE : SINT;
+END_STRUCT
+END_TYPE]]></Declaration>
+  </DUT>
+</TcPlcObject>

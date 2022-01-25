@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="FRACTION" Id="{9b46faa7-ec5d-4d12-baaa-dd6df46d99f5}">
+    <Declaration><![CDATA[TYPE FRACTION :
+STRUCT
+	NUMERATOR : INT;
+	DENOMINATOR : INT;
+END_STRUCT
+END_TYPE]]></Declaration>
+  </DUT>
+</TcPlcObject>

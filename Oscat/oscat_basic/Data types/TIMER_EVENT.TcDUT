@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="TIMER_EVENT" Id="{ff8795cf-8afc-4f62-a45a-b8de1f5e767b}">
+    <Declaration><![CDATA[TYPE TIMER_EVENT :
+STRUCT
+	TYP : BYTE;
+	CHANNEL : BYTE;
+	DAY : BYTE;
+	START : TOD;
+	DURATION : TIME;
+	LAND : BYTE;
+	LOR : BYTE;
+	LAST : DT;
+END_STRUCT
+END_TYPE]]></Declaration>
+  </DUT>
+</TcPlcObject>

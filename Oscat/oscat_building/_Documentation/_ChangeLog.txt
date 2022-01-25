@@ -1,0 +1,4 @@
+Changes made to make the original library compile correctly
+* WATER_CP			corrected array initialization
+* WATER_ENTHALPY	corrected array initialization
+* STRING(STRING_LENGTH)		replaced with T_MaxString

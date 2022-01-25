@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="FILE_PATH_DATA" Id="{b99548ec-d410-45dd-a721-3d9656cf943a}">
+    <Declaration><![CDATA[TYPE FILE_PATH_DATA :
+STRUCT
+	DRIVE : STRING(3);
+	DIRECTORY : T_MaxString;
+	FILENAME : STRING;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

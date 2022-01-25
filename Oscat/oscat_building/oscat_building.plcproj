@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6ac85c9b-4a3b-4053-9522-ed0a05eeb85d}</ProjectGuid>
+    <Name>oscat_building_100</Name>
+    <Application>{7537798c-2445-4813-bd52-60543be10a2c}</Application>
+    <TypeSystem>{165e088d-80fe-40f5-be1f-c572a7cfd693}</TypeSystem>
+    <Implicit_Task_Info>{100fbe4e-ff05-4176-a866-704e4a6c8239}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{85179af1-5537-4296-8847-6ce395513b51}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{dd1ed1dc-48bb-4024-a32f-4c2314a6e0e2}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{38e9a9ee-0f10-483c-b9df-e9f0cad44751}</LibraryReferences>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Company>Oscat</Company>
+    <Released>false</Released>
+    <Title>Oscat_Building</Title>
+    <ProjectVersion>1.0.0</ProjectVersion>
+    <LibraryCategories>
+      <LibraryCategory xmlns="">
+        <Id>{c4f3d7e6-b892-4109-af00-977141051b33}</Id>
+        <Version>1.0.0.0</Version>
+        <DefaultName>Oscat</DefaultName>
+      </LibraryCategory>
+    </LibraryCategories>
+    <SelectedLibraryCategories>
+      <Id xmlns="">{c4f3d7e6-b892-4109-af00-977141051b33}</Id>
+    </SelectedLibraryCategories>
+    <DefaultNamespace>Oscat_Building</DefaultNamespace>
+    <Author>Oscat</Author>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Data types" />
+    <Folder Include="Global Variables" />
+    <Folder Include="POUs" />
+    <Folder Include="POUs\actuators" />
+    <Folder Include="POUs\electrical" />
+    <Folder Include="POUs\HLK" />
+    <Folder Include="POUs\Jalousie" />
+    <Folder Include="POUs\Other" />
+    <Folder Include="_Documentation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global Variables\Constants.TcGVL" />
+    <Compile Include="Global Variables\Globale_Variablen.TcGVL" />
+    <Compile Include="Global Variables\Setup_Data.TcGVL" />
+    <Compile Include="POUs\actuators\ACTUATOR_2P.TcPOU" />
+    <Compile Include="POUs\actuators\ACTUATOR_3P.TcPOU" />
+    <Compile Include="POUs\actuators\ACTUATOR_A.TcPOU" />
+    <Compile Include="POUs\actuators\ACTUATOR_COIL.TcPOU" />
+    <Compile Include="POUs\actuators\ACTUATOR_PUMP.TcPOU" />
+    <Compile Include="POUs\actuators\ACTUATOR_UD.TcPOU" />
+    <Compile Include="POUs\actuators\AUTORUN.TcPOU" />
+    <Compile Include="POUs\electrical\CLICK.TcPOU" />
+    <Compile Include="POUs\electrical\CLICK_MODE.TcPOU" />
+    <Compile Include="POUs\electrical\DEBOUNCE.TcPOU" />
+    <Compile Include="POUs\electrical\DIMM_2.TcPOU" />
+    <Compile Include="POUs\electrical\DIMM_I.TcPOU" />
+    <Compile Include="POUs\electrical\F_LAMP.TcPOU" />
+    <Compile Include="POUs\electrical\PULSE_LENGTH.TcPOU" />
+    <Compile Include="POUs\electrical\PULSE_T.TcPOU" />
+    <Compile Include="POUs\electrical\SWITCH_I.TcPOU" />
+    <Compile Include="POUs\electrical\SWITCH_X.TcPOU" />
+    <Compile Include="POUs\electrical\SW_RECONFIG.TcPOU" />
+    <Compile Include="POUs\electrical\TIMER_1.TcPOU" />
+    <Compile Include="POUs\electrical\TIMER_2.TcPOU" />
+    <Compile Include="POUs\electrical\TIMER_EVENT_DECODE.TcPOU" />
+    <Compile Include="POUs\electrical\TIMER_EXT.TcPOU" />
+    <Compile Include="POUs\electrical\TIMER_P4.TcPOU" />
+    <Compile Include="POUs\HLK\AIR_DENSITY.TcPOU" />
+    <Compile Include="POUs\HLK\AIR_ENTHALPY.TcPOU" />
+    <Compile Include="POUs\HLK\BOILER.TcPOU" />
+    <Compile Include="POUs\HLK\BURNER.TcPOU" />
+    <Compile Include="POUs\HLK\DEW_CON.TcPOU" />
+    <Compile Include="POUs\HLK\DEW_RH.TcPOU" />
+    <Compile Include="POUs\HLK\DEW_TEMP.TcPOU" />
+    <Compile Include="POUs\HLK\HEAT_INDEX.TcPOU" />
+    <Compile Include="POUs\HLK\HEAT_METER.TcPOU" />
+    <Compile Include="POUs\HLK\HEAT_TEMP.TcPOU" />
+    <Compile Include="POUs\HLK\LEGIONELLA.TcPOU" />
+    <Compile Include="POUs\HLK\SDD.TcPOU" />
+    <Compile Include="POUs\HLK\SDD_NH3.TcPOU" />
+    <Compile Include="POUs\HLK\SDT_NH3.TcPOU" />
+    <Compile Include="POUs\HLK\TANK_LEVEL.TcPOU" />
+    <Compile Include="POUs\HLK\TANK_VOL1.TcPOU" />
+    <Compile Include="POUs\HLK\TANK_VOL2.TcPOU" />
+    <Compile Include="POUs\HLK\TEMP_EXT.TcPOU" />
+    <Compile Include="POUs\HLK\T_AVG24.TcPOU" />
+    <Compile Include="POUs\HLK\WATER_CP.TcPOU" />
+    <Compile Include="POUs\HLK\WATER_DENSITY.TcPOU" />
+    <Compile Include="POUs\HLK\WATER_ENTHALPY.TcPOU" />
+    <Compile Include="POUs\HLK\WCT.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_ACTUATOR.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_CONTROL.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_CONTROL_S.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_INPUT.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_NIGHT.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_SCENE.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_SECURITY.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_SET.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_SHADE.TcPOU" />
+    <Compile Include="POUs\Jalousie\BLIND_SHADE_S.TcPOU" />
+    <Compile Include="POUs\Other\BUILDING_VERSION.TcPOU" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryReference Include="Tc2_Standard,newest,Beckhoff Automation GmbH">
+      <Namespace>Tc2_Standard</Namespace>
+    </LibraryReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Documentation\_ChangeLog.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="oscat_building.tmc">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="_Documentation\Example.libcat.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="_Documentation\Oscat.libcat.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="_Documentation\oscat_building100_en.pdf">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderReference Include="Oscat_Basic">
+      <DefaultResolution>Oscat_Basic, * (Oscat)</DefaultResolution>
+      <Namespace>Oscat_Basic</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_System">
+      <DefaultResolution>Tc2_System, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_System</Namespace>
+    </PlaceholderReference>
+  </ItemGroup>
+  <ProjectExtensions>
+    <PlcProjectOptions>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="OptionKey">
+      <v n="Name">"&lt;ProjectRoot&gt;"</v>
+      <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+        <v>{8F99A816-E488-41E4-9FA3-846536012284}</v>
+        <o>
+          <v n="Name">"{8F99A816-E488-41E4-9FA3-846536012284}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{29BD8D0C-3586-4548-BB48-497B9A01693F}</v>
+        <o>
+          <v n="Name">"{29BD8D0C-3586-4548-BB48-497B9A01693F}"</v>
+          <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+            <v>Rules</v>
+            <o>
+              <v n="Name">"Rules"</v>
+              <d n="SubKeys" t="Hashtable" />
+              <d n="Values" t="Hashtable" />
+            </o>
+          </d>
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{40450F57-0AA3-4216-96F3-5444ECB29763}</v>
+        <o>
+          <v n="Name">"{40450F57-0AA3-4216-96F3-5444ECB29763}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String" cvt="String">
+            <v>ActiveVisuProfile</v>
+            <v>IR0whWr8bwfwBwAAiD2qpQAAAABVAgAA37x72QAAAAABAAAAAAAAAAEaUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwACTHsAZgA5ADUAYgBiADQAMgA2AC0ANQA1ADIANAAtADQAYgA0ADUALQA5ADQAMAAwAC0AZgBiADAAZgAyAGUANwA3AGUANQAxAGIAfQADCE4AYQBtAGUABDBUAHcAaQBuAEMAQQBUACAAMwAuADEAIABCAHUAaQBsAGQAIAA0ADAAMgA0AC4ANwAFFlAAcgBvAGYAaQBsAGUARABhAHQAYQAGTHsAMQA2AGUANQA1AGIANgAwAC0ANwAwADQAMwAtADQAYQA2ADMALQBiADYANQBiAC0ANgAxADQANwAxADMAOAA3ADgAZAA0ADIAfQAHEkwAaQBiAHIAYQByAGkAZQBzAAhMewAzAGIAZgBkADUANAA1ADkALQBiADAANwBmAC0ANABkADYAZQAtAGEAZQAxAGEALQBhADgAMwAzADUANgBhADUANQAxADQAMgB9AAlMewA5AGMAOQA1ADgAOQA2ADgALQAyAGMAOAA1AC0ANAAxAGIAYgAtADgAOAA3ADEALQA4ADkANQBmAGYAMQBmAGUAZABlADEAYQB9AAoOVgBlAHIAcwBpAG8AbgALBmkAbgB0AAwKVQBzAGEAZwBlAA0KVABpAHQAbABlAA4aVgBpAHMAdQBFAGwAZQBtAE0AZQB0AGUAcgAPDkMAbwBtAHAAYQBuAHkAEAxTAHkAcwB0AGUAbQARElYAaQBzAHUARQBsAGUAbQBzABIwVgBpAHMAdQBFAGwAZQBtAHMAUwBwAGUAYwBpAGEAbABDAG8AbgB0AHIAbwBsAHMAEyhWAGkAcwB1AEUAbABlAG0AcwBXAGkAbgBDAG8AbgB0AHIAbwBsAHMAFCRWAGkAcwB1AEUAbABlAG0AVABlAHgAdABFAGQAaQB0AG8AcgAVIlYAaQBzAHUATgBhAHQAaQB2AGUAQwBvAG4AdAByAG8AbAAWFHYAaQBzAHUAaQBuAHAAdQB0AHMAFwxzAHkAcwB0AGUAbQAYGFYAaQBzAHUARQBsAGUAbQBCAGEAcwBlABkmRABlAHYAUABsAGEAYwBlAGgAbwBsAGQAZQByAHMAVQBzAGUAZAAaCGIAbwBvAGwAGyJQAGwAdQBnAGkAbgBDAG8AbgBzAHQAcgBhAGkAbgB0AHMAHEx7ADQAMwBkADUAMgBiAGMAZQAtADkANAAyAGMALQA0ADQAZAA3AC0AOQBlADkANAAtADEAYgBmAGQAZgAzADEAMABlADYAMwBjAH0AHRxBAHQATABlAGEAcwB0AFYAZQByAHMAaQBvAG4AHhRQAGwAdQBnAGkAbgBHAHUAaQBkAB8WUwB5AHMAdABlAG0ALgBHAHUAaQBkACBIYQBmAGMAZAA1ADQANAA2AC0ANAA5ADEANAAtADQAZgBlADcALQBiAGIANwA4AC0AOQBiAGYAZgBlAGIANwAwAGYAZAAxADcAIRRVAHAAZABhAHQAZQBJAG4AZgBvACJMewBiADAAMwAzADYANgBhADgALQBiADUAYwAwAC0ANABiADkAYQAtAGEAMAAwAGUALQBlAGIAOAA2ADAAMQAxADEAMAA0AGMAMwB9ACMOVQBwAGQAYQB0AGUAcwAkTHsAMQA4ADYAOABmAGYAYwA5AC0AZQA0AGYAYwAtADQANQAzADIALQBhAGMAMAA2AC0AMQBlADMAOQBiAGIANQA1ADcAYgA2ADkAfQAlTHsAYQA1AGIAZAA0ADgAYwAzAC0AMABkADEANwAtADQAMQBiADUALQBiADEANgA0AC0ANQBmAGMANgBhAGQAMgBiADkANgBiADcAfQAmFk8AYgBqAGUAYwB0AHMAVAB5AHAAZQAnVFUAcABkAGEAdABlAEwAYQBuAGcAdQBhAGcAZQBNAG8AZABlAGwARgBvAHIAQwBvAG4AdgBlAHIAdABpAGIAbABlAEwAaQBiAHIAYQByAGkAZQBzACgQTABpAGIAVABpAHQAbABlACkUTABpAGIAQwBvAG0AcABhAG4AeQAqHlUAcABkAGEAdABlAFAAcgBvAHYAaQBkAGUAcgBzACs4UwB5AHMAdABlAG0ALgBDAG8AbABsAGUAYwB0AGkAbwBuAHMALgBIAGEAcwBoAHQAYQBiAGwAZQAsEnYAaQBzAHUAZQBsAGUAbQBzAC1INgBjAGIAMQBjAGQAZQAxAC0AZAA1AGQAYwAtADQAYQAzAGIALQA5ADAANQA0AC0AMgAxAGYAYQA3ADUANgBhADMAZgBhADQALihJAG4AdABlAHIAZgBhAGMAZQBWAGUAcgBzAGkAbwBuAEkAbgBmAG8AL0x7AGMANgAxADEAZQA0ADAAMAAtADcAZgBiADkALQA0AGMAMwA1AC0AYgA5AGEAYwAtADQAZQAzADEANABiADUAOQA5ADYANAAzAH0AMBhNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgAxGE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuADIMTABlAGcAYQBjAHkAMzBMAGEAbgBnAHUAYQBnAGUATQBvAGQAZQBsAFYAZQByAHMAaQBvAG4ASQBuAGYAbwA0MEwAbwBhAGQATABpAGIAcgBhAHIAaQBlAHMASQBuAHQAbwBQAHIAbwBqAGUAYwB0ADUaQwBvAG0AcABhAHQAaQBiAGkAbABpAHQAeQDQAAIaA9ADAS0E0AUGGgfQBwgaAUUHCQjQAAkaBEUKCwQDAAAABQAAAA0AAAAAAAAA0AwLrQIAAADQDQEtDtAPAS0Q0AAJGgRFCgsEAwAAAAUAAAANAAAAKAAAANAMC60BAAAA0A0BLRHQDwEtENAACRoERQoLBAMAAAAFAAAADQAAAAAAAADQDAutAgAAANANAS0S0A8BLRDQAAkaBEUKCwQDAAAABQAAAA0AAAAUAAAA0AwLrQIAAADQDQEtE9APAS0Q0AAJGgRFCgsEAwAAAAUAAAANAAAAAAAAANAMC60CAAAA0A0BLRTQDwEtENAACRoERQoLBAMAAAAFAAAADQAAAAAAAADQDAutAgAAANANAS0V0A8BLRDQAAkaBEUKCwQDAAAABQAAAA0AAAAAAAAA0AwLrQIAAADQDQEtFtAPAS0X0AAJGgRFCgsEAwAAAAUAAAANAAAAKAAAANAMC60EAAAA0A0BLRjQDwEtENAZGq0BRRscAdAAHBoCRR0LBAMAAAAFAAAADQAAAAAAAADQHh8tINAhIhoCRSMkAtAAJRoFRQoLBAMAAAADAAAAAAAAAAoAAADQJgutAAAAANADAS0n0CgBLRHQKQEtENAAJRoFRQoLBAMAAAADAAAAAAAAAAoAAADQJgutAQAAANADAS0n0CgBLRHQKQEtEJoqKwFFAAEC0AABLSzQAAEtF9AAHy0t0C4vGgPQMAutAQAAANAxC60XAAAA0DIarQDQMy8aA9AwC60CAAAA0DELrQMAAADQMhqtANA0Gq0A0DUarQA=</v>
+          </d>
+        </o>
+        <v>{A3BBA713-63D7-4de6-BEC2-E3BAAD8789F8}</v>
+        <o>
+          <v n="Name">"{A3BBA713-63D7-4de6-BEC2-E3BAAD8789F8}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{C70B7845-2722-4a9b-A0EA-88C877A4B36F}</v>
+        <o>
+          <v n="Name">"{C70B7845-2722-4a9b-A0EA-88C877A4B36F}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String">
+            <v>EnableMaxAuthenticationTrials</v>
+            <v>true</v>
+            <v>EnableMaxTimeOfInactivity</v>
+            <v>true</v>
+            <v>UserList</v>
+            <o t="UserList">
+              <a n="Users" cet="User">
+                <o>
+                  <v n="Id">{b9a8c16a-1fc2-466f-b665-a63283ba54d5}</v>
+                  <v n="Name">"Owner"</v>
+                  <v n="FullName">""</v>
+                  <v n="Description">""</v>
+                  <v n="Active">true</v>
+                </o>
+              </a>
+            </o>
+            <v>MaxTimeOfInactivity</v>
+            <v>10</v>
+            <v>MaxAuthenticationTrials</v>
+            <v>3</v>
+            <v>EnableNewHashFormat</v>
+            <v>false</v>
+            <v>GroupList</v>
+            <o t="GroupList">
+              <a n="Groups" cet="Group">
+                <o>
+                  <v n="Id">{93a899ac-1c58-4795-950c-b26460d80b29}</v>
+                  <v n="Name">"Everyone"</v>
+                  <v n="Description">""</v>
+                  <v n="IsEveryoneGroup">true</v>
+                  <v n="IsOwnerGroup">false</v>
+                  <l n="UserMembers" t="ArrayList" cet="Guid">
+                    <v>b9a8c16a-1fc2-466f-b665-a63283ba54d5</v>
+                  </l>
+                  <l n="GroupMembers" t="ArrayList" />
+                </o>
+                <o>
+                  <v n="Id">{9d2f2069-762b-4018-a559-2523d348cb6a}</v>
+                  <v n="Name">"Owner"</v>
+                  <v n="Description">""</v>
+                  <v n="IsEveryoneGroup">false</v>
+                  <v n="IsOwnerGroup">true</v>
+                  <l n="UserMembers" t="ArrayList" cet="Guid">
+                    <v>b9a8c16a-1fc2-466f-b665-a63283ba54d5</v>
+                  </l>
+                  <l n="GroupMembers" t="ArrayList" />
+                </o>
+              </a>
+            </o>
+            <v>UserAuthentication</v>
+            <o t="UserAuthentication">
+              <d n="UserToPasswordHash" t="Hashtable" ckt="Guid" cvt="String">
+                <v>b9a8c16a-1fc2-466f-b665-a63283ba54d5</v>
+                <v>d41d8cd98f00b204e9800998ecf8427e</v>
+              </d>
+            </o>
+          </d>
+        </o>
+        <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
+        <o>
+          <v n="Name">"{192FAD59-8248-4824-A8DE-9177C94C195A}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{246001F4-279D-43AC-B241-948EB31120E1}</v>
+        <o>
+          <v n="Name">"{246001F4-279D-43AC-B241-948EB31120E1}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+      </d>
+      <d n="Values" t="Hashtable" />
+    </o>
+        </Data>
+        <TypeList>
+          <Type n="ArrayList">System.Collections.ArrayList</Type>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="Group">{daecd4be-1e2b-4335-a125-4a1ac83ea49f}</Type>
+          <Type n="GroupList">{bf4dffda-f055-446d-9d7a-5f126720896b}</Type>
+          <Type n="Guid">System.Guid</Type>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="Int32">System.Int32</Type>
+          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+          <Type n="String">System.String</Type>
+          <Type n="User">{cd83029e-13b0-491e-9e4b-921adda0d86b}</Type>
+          <Type n="UserAuthentication">{3635a671-97f5-41bb-9e29-0ebb9795975c}</Type>
+          <Type n="UserList">{9fe6b547-6bc8-4f11-b589-b517860c5891}</Type>
+        </TypeList>
+      </XmlArchive>
+    </PlcProjectOptions>
+  </ProjectExtensions>
+</Project>

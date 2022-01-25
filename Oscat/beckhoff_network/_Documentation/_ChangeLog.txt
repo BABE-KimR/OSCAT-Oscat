@@ -1,0 +1,11 @@
+Changes made to make the original library compile correctly
+* STRING_TO_URL		removed VAR_TEMP
+* CSV_PARSER_BUF	uses PVOID instead of DWORD for pointer calculations
+* CSV_PARSER_FILE	uses PVOID instead of DWORD for pointer calculations
+* INI_PARSER_BUF	uses PVOID instead of DWORD for pointer calculations
+* INI_PARSER_FILE	uses PVOID instead of DWORD for pointer calculations
+* WORLD_WEATHER_ICON_OSCAT	corrected array initialization
+* YAHOO_WEATHER_ICON_OSCAT	corrected array initialization
+* STRING(STRING_LENGTH)		replaced with T_MaxString
+
+

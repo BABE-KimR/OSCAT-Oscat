@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+	<Project ProjectGUID="{9510A017-6545-48B8-B5CB-51CCDE8179E1}" Target64Bit="true" ShowHideConfigurations="#x106">
+		<Plc>
+			<Project GUID="{7F936F19-8DCA-47F2-9C0D-5AB23DC0338B}" Name="oscat_basic" PrjFilePath="oscat_basic\oscat_basic.plcproj" TmcFilePath="oscat_basic\oscat_basic.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="oscat_basic\oscat_basic.tmc">
+					<Name>oscat_basic Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Contexts>
+						<Context>
+							<Id>1</Id>
+							<Name>Default</Name>
+						</Context>
+					</Contexts>
+				</Instance>
+			</Project>
+			<Project GUID="{6AC85C9B-4A3B-4053-9522-ED0A05EEB85D}" Name="oscat_building" PrjFilePath="oscat_building\oscat_building.plcproj" TmcFilePath="oscat_building\oscat_building.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="oscat_building\oscat_building.tmc">
+					<Name>oscat_building Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Contexts>
+						<Context>
+							<Id>1</Id>
+							<Name>Default</Name>
+						</Context>
+					</Contexts>
+				</Instance>
+			</Project>
+			<Project GUID="{9052BA7B-7FDE-4649-9CA9-859E809AD8E0}" Name="beckhoff_network" PrjFilePath="beckhoff_network\beckhoff_network.plcproj" TmcFilePath="beckhoff_network\beckhoff_network.tmc" ReloadTmc="true" AmsPort="853" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502080" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="beckhoff_network\beckhoff_network.tmc">
+					<Name>beckhoff_network Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Contexts>
+						<Context>
+							<Id>1</Id>
+							<Name>Default</Name>
+						</Context>
+					</Contexts>
+				</Instance>
+			</Project>
+		</Plc>
+	</Project>
+</TcSmProject>

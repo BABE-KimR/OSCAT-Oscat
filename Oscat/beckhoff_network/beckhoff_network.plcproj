@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9052ba7b-7fde-4649-9ca9-859e809ad8e0}</ProjectGuid>
+    <Name>beckhoff_network_121</Name>
+    <Application>{8f07ecb7-c91c-4c36-b3cf-41111e0f7306}</Application>
+    <TypeSystem>{e922356e-c7e2-4857-83ab-47e5d2506afc}</TypeSystem>
+    <Implicit_Task_Info>{cc438d9d-a451-4064-915f-39a4f671f0a7}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{8009ab49-577a-4d3b-ba3c-1cc089f02d5a}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{90523efb-eda6-43e9-b9d6-8dc48dadbe2c}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{26bad295-b00a-4c24-9515-2c886fd4acb3}</LibraryReferences>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Company>Oscat</Company>
+    <Released>false</Released>
+    <Title>Oscat_Network</Title>
+    <ProjectVersion>1.2.1</ProjectVersion>
+    <LibraryCategories>
+      <LibraryCategory xmlns="">
+        <Id>{c4f3d7e6-b892-4109-af00-977141051b33}</Id>
+        <Version>1.0.0.0</Version>
+        <DefaultName>Oscat</DefaultName>
+      </LibraryCategory>
+    </LibraryCategories>
+    <SelectedLibraryCategories>
+      <Id xmlns="">{c4f3d7e6-b892-4109-af00-977141051b33}</Id>
+    </SelectedLibraryCategories>
+    <DefaultNamespace>Oscat_Network</DefaultNamespace>
+    <Author>Oscat</Author>
+    <CombineIds>true</CombineIds>
+    <PreserveCompiledLibComments>true</PreserveCompiledLibComments>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Data types" />
+    <Folder Include="Data types\DATA_LOG" />
+    <Folder Include="Data types\FILE_SERVER" />
+    <Folder Include="Data types\NETWORK" />
+    <Folder Include="Data types\NET_VAR" />
+    <Folder Include="Data types\TELNET_VISION" />
+    <Folder Include="Data types\WEATHER" />
+    <Folder Include="Global Variables" />
+    <Folder Include="POUs" />
+    <Folder Include="POUs\CONVERT" />
+    <Folder Include="POUs\DATA_LOG" />
+    <Folder Include="POUs\DEMO" />
+    <Folder Include="POUs\DRIVER" />
+    <Folder Include="POUs\FILE" />
+    <Folder Include="POUs\HARDWARE" />
+    <Folder Include="POUs\NETWORK" />
+    <Folder Include="POUs\NET_VAR" />
+    <Folder Include="POUs\OTHER" />
+    <Folder Include="POUs\TELNET_VISION" />
+    <Folder Include="POUs\WEATHER" />
+    <Folder Include="Project Information" />
+    <Folder Include="Version" />
+    <Folder Include="_Documentation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data types\DATA_LOG\DLOG_DATA.TcDUT" />
+    <Compile Include="Data types\DATA_LOG\LOG_CONTROL.TcDUT" />
+    <Compile Include="Data types\DATA_LOG\MYSQL_COM.TcDUT" />
+    <Compile Include="Data types\DATA_LOG\PRINTF_DATA.TcDUT" />
+    <Compile Include="Data types\DATA_LOG\UNI_CIRCULAR_BUFFER_DATA.TcDUT" />
+    <Compile Include="Data types\DATA_LOG\us_LOG_VIEWPORT.TcDUT" />
+    <Compile Include="Data types\FILE_SERVER\FILE_PATH_DATA.TcDUT" />
+    <Compile Include="Data types\FILE_SERVER\FILE_SERVER_DATA.TcDUT" />
+    <Compile Include="Data types\NETWORK\IP2GEO_DATA.TcDUT" />
+    <Compile Include="Data types\NETWORK\IP_C.TcDUT" />
+    <Compile Include="Data types\NETWORK\IP_FIFO_DATA.TcDUT" />
+    <Compile Include="Data types\NETWORK\NETWORK_BUFFER.TcDUT" />
+    <Compile Include="Data types\NETWORK\NETWORK_BUFFER_SHORT.TcDUT" />
+    <Compile Include="Data types\NETWORK\NW_BUF_LONG.TcDUT" />
+    <Compile Include="Data types\NETWORK\NW_BUF_SHORT.TcDUT" />
+    <Compile Include="Data types\NETWORK\URL.TcDUT" />
+    <Compile Include="Data types\NETWORK\VMAP_DATA.TcDUT" />
+    <Compile Include="Data types\NETWORK\XML_CONTROL.TcDUT" />
+    <Compile Include="Data types\NET_VAR\NET_VAR_DATA.TcDUT" />
+    <Compile Include="Data types\TELNET_VISION\us_TN_INPUT_CONTROL.TcDUT" />
+    <Compile Include="Data types\TELNET_VISION\us_TN_INPUT_CONTROL_DATA.TcDUT" />
+    <Compile Include="Data types\TELNET_VISION\us_TN_MENU.TcDUT" />
+    <Compile Include="Data types\TELNET_VISION\us_TN_MENU_POPUP.TcDUT" />
+    <Compile Include="Data types\TELNET_VISION\us_TN_SCREEN.TcDUT" />
+    <Compile Include="Data types\WEATHER\WORLD_WEATHER_CUR.TcDUT" />
+    <Compile Include="Data types\WEATHER\WORLD_WEATHER_DATA.TcDUT" />
+    <Compile Include="Data types\WEATHER\WORLD_WEATHER_DAY.TcDUT" />
+    <Compile Include="Data types\WEATHER\YAHOO_WEATHER_DATA.TcDUT" />
+    <Compile Include="Global Variables\Constants.TcGVL" />
+    <Compile Include="Global Variables\Globale_Variablen.TcGVL" />
+    <Compile Include="POUs\CONVERT\BASE64_DECODE_STR.TcPOU" />
+    <Compile Include="POUs\CONVERT\BASE64_DECODE_STREAM.TcPOU" />
+    <Compile Include="POUs\CONVERT\BASE64_ENCODE_STR.TcPOU" />
+    <Compile Include="POUs\CONVERT\BASE64_ENCODE_STREAM.TcPOU" />
+    <Compile Include="POUs\CONVERT\HTML_DECODE.TcPOU" />
+    <Compile Include="POUs\CONVERT\HTML_ENCODE.TcPOU" />
+    <Compile Include="POUs\CONVERT\IP4_CHECK.TcPOU" />
+    <Compile Include="POUs\CONVERT\IP4_DECODE.TcPOU" />
+    <Compile Include="POUs\CONVERT\IP4_TO_STRING.TcPOU" />
+    <Compile Include="POUs\CONVERT\IS_IP4.TcPOU" />
+    <Compile Include="POUs\CONVERT\IS_URLCHR.TcPOU" />
+    <Compile Include="POUs\CONVERT\MD5_AUX.TcPOU" />
+    <Compile Include="POUs\CONVERT\MD5_CRAM_AUTH.TcPOU" />
+    <Compile Include="POUs\CONVERT\MD5_STR.TcPOU" />
+    <Compile Include="POUs\CONVERT\MD5_STREAM.TcPOU" />
+    <Compile Include="POUs\CONVERT\MD5_TO_STRH.TcPOU" />
+    <Compile Include="POUs\CONVERT\RC4_CRYPT_STREAM.TcPOU" />
+    <Compile Include="POUs\CONVERT\SHA1_STR.TcPOU" />
+    <Compile Include="POUs\CONVERT\SHA1_STREAM.TcPOU" />
+    <Compile Include="POUs\CONVERT\SHA1_TO_STRH.TcPOU" />
+    <Compile Include="POUs\CONVERT\STRING_TO_URL.TcPOU" />
+    <Compile Include="POUs\CONVERT\URL_DECODE.TcPOU" />
+    <Compile Include="POUs\CONVERT\URL_ENCODE.TcPOU" />
+    <Compile Include="POUs\CONVERT\URL_TO_STRING.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_BOOL.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_DINT.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_DT.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_FILE_TO_FTP.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_FILE_TO_SMTP.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_REAL.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_STORE_FILE_CSV.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_STORE_FILE_HTML.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_STORE_FILE_XML.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_STORE_RRD.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\DLOG_STRING.TcPOU" />
+    <Compile Include="POUs\DATA_LOG\UNI_CIRCULAR_BUFFER.TcPOU" />
+    <Compile Include="POUs\DEMO\BASE64_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\CSV_PARSER_BUF_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\CSV_PARSER_FILE_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\DLOG_FILE_CSV_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\DLOG_FILE_CSV_FTP_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\DLOG_FILE_CSV_SMTP_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\DLOG_FILE_HTML_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\DLOG_FILE_XML_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\DLOG_RRD_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\DNS_DYN_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\DNS_REV_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\DNS_SNTP_SYSLOG_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\FILE_BLOCK_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\FTP_CLIENT_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\GET_WAN_IP_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\HTTP_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\INI_PARSER_BUF_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\INI_PARSER_FILE_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\IP2GEO_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\IRTRANS_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\MB_CLIENT_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\MB_SERVER_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\MD5_CRAM_AUTH_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\NET_VAR_MASTER_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\NET_VAR_SLAVE_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\RC4_CRYPT_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\SHA1_MD5_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\SMTP_CLIENT_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\SPIDER_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\TELNET_LOG_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\TELNET_PRINT_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\TN_VISION_DEMO_1.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\TN_VISION_DEMO_2.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\WORLD_WEATHER_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DEMO\YAHOO_WEATHER_DEMO.TcPOU">
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="POUs\DRIVER\IRTRANS_DECODE.TcPOU" />
+    <Compile Include="POUs\DRIVER\IRTRANS_RCV_1.TcPOU" />
+    <Compile Include="POUs\DRIVER\IRTRANS_RCV_4.TcPOU" />
+    <Compile Include="POUs\DRIVER\IRTRANS_RCV_8.TcPOU" />
+    <Compile Include="POUs\DRIVER\IRTRANS_SERVER.TcPOU" />
+    <Compile Include="POUs\DRIVER\IRTRANS_SND_1.TcPOU" />
+    <Compile Include="POUs\DRIVER\IRTRANS_SND_4.TcPOU" />
+    <Compile Include="POUs\DRIVER\IRTRANS_SND_8.TcPOU" />
+    <Compile Include="POUs\FILE\CSV_PARSER_BUF.TcPOU" />
+    <Compile Include="POUs\FILE\CSV_PARSER_FILE.TcPOU" />
+    <Compile Include="POUs\FILE\FILE_BLOCK.TcPOU" />
+    <Compile Include="POUs\FILE\FILE_PATH_SPLIT.TcPOU" />
+    <Compile Include="POUs\FILE\INI_PARSER_BUF.TcPOU" />
+    <Compile Include="POUs\FILE\INI_PARSER_FILE.TcPOU" />
+    <Compile Include="POUs\HARDWARE\FILE_SERVER.TcPOU" />
+    <Compile Include="POUs\HARDWARE\IP_CONTROL.TcPOU" />
+    <Compile Include="POUs\HARDWARE\IP_CONTROL2.TcPOU" />
+    <Compile Include="POUs\HARDWARE\IP_CONTROL_RESET.TcPOU" />
+    <Compile Include="POUs\NETWORK\DNS_CLIENT.TcPOU" />
+    <Compile Include="POUs\NETWORK\DNS_DYN.TcPOU" />
+    <Compile Include="POUs\NETWORK\DNS_REV_CLIENT.TcPOU" />
+    <Compile Include="POUs\NETWORK\FTP_CLIENT.TcPOU" />
+    <Compile Include="POUs\NETWORK\GET_WAN_IP.TcPOU" />
+    <Compile Include="POUs\NETWORK\HTTP_GET.TcPOU" />
+    <Compile Include="POUs\NETWORK\IP2GEO.TcPOU" />
+    <Compile Include="POUs\NETWORK\IP_FIFO.TcPOU" />
+    <Compile Include="POUs\NETWORK\LOG_MSG.TcPOU" />
+    <Compile Include="POUs\NETWORK\LOG_VIEWPORT.TcPOU" />
+    <Compile Include="POUs\NETWORK\MB_CLIENT.TcPOU" />
+    <Compile Include="POUs\NETWORK\MB_SERVER.TcPOU" />
+    <Compile Include="POUs\NETWORK\MB_VMAP.TcPOU" />
+    <Compile Include="POUs\NETWORK\PRINT_SF.TcPOU" />
+    <Compile Include="POUs\NETWORK\READ_HTTP.TcPOU" />
+    <Compile Include="POUs\NETWORK\SMTP_CLIENT.TcPOU" />
+    <Compile Include="POUs\NETWORK\SNTP_CLIENT.TcPOU" />
+    <Compile Include="POUs\NETWORK\SNTP_SERVER.TcPOU" />
+    <Compile Include="POUs\NETWORK\SPIDER_ACCESS.TcPOU" />
+    <Compile Include="POUs\NETWORK\SYS_LOG.TcPOU" />
+    <Compile Include="POUs\NETWORK\TELNET_LOG.TcPOU" />
+    <Compile Include="POUs\NETWORK\TELNET_PRINT.TcPOU" />
+    <Compile Include="POUs\NETWORK\XML_READER.TcPOU" />
+    <Compile Include="POUs\NET_VAR\NET_VAR_BOOL8.TcPOU" />
+    <Compile Include="POUs\NET_VAR\NET_VAR_BUFFER.TcPOU" />
+    <Compile Include="POUs\NET_VAR\NET_VAR_CONTROL.TcPOU" />
+    <Compile Include="POUs\NET_VAR\NET_VAR_DWORD8.TcPOU" />
+    <Compile Include="POUs\NET_VAR\NET_VAR_REAL8.TcPOU" />
+    <Compile Include="POUs\NET_VAR\NET_VAR_STRING.TcPOU" />
+    <Compile Include="POUs\NET_VAR\NET_VAR_X8.TcPOU" />
+    <Compile Include="POUs\OTHER\ELEMENT_COUNT.TcPOU" />
+    <Compile Include="POUs\OTHER\ELEMENT_GET.TcPOU" />
+    <Compile Include="POUs\OTHER\NETWORK_VERSION.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_FRAMEWORK.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_INPUT_CONTROL.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_INPUT_EDIT_LINE.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_INPUT_MENU_BAR.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_INPUT_MENU_POPUP.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_INPUT_SELECT_POPUP.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_INPUT_SELECT_TEXT.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_RECEIVE.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_ADD_SHADOW.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_AREA_RESTORE.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_AREA_SAVE.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_BOX.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_FILL.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_LINE.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_READ_ATTR.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_READ_CHAR.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_SHADOW_ATTR.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_VIEWPORT.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_WRITE.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_WRITE_ATTR.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_WRITE_C.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_WRITE_CHAR.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_WRITE_EOS.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_XY2_ERROR.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SC_XY_ERROR.TcPOU" />
+    <Compile Include="POUs\TELNET_VISION\TN_SEND_ROWS.TcPOU" />
+    <Compile Include="POUs\WEATHER\MOON_PHASE.TcPOU" />
+    <Compile Include="POUs\WEATHER\WORLD_WEATHER.TcPOU" />
+    <Compile Include="POUs\WEATHER\WORLD_WEATHER_DESC_GE.TcPOU" />
+    <Compile Include="POUs\WEATHER\WORLD_WEATHER_ICON_OSCAT.TcPOU" />
+    <Compile Include="POUs\WEATHER\YAHOO_WEATHER.TcPOU" />
+    <Compile Include="POUs\WEATHER\YAHOO_WEATHER_DESC_GE.TcPOU" />
+    <Compile Include="POUs\WEATHER\YAHOO_WEATHER_ICON_OSCAT.TcPOU" />
+    <Compile Include="Project Information\F_GetCompany.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetTitle.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetVersion.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Version\Global_Version.TcGVL">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryReference Include="Tc2_Standard,newest,Beckhoff Automation GmbH">
+      <Namespace>Tc2_Standard</Namespace>
+    </LibraryReference>
+    <LibraryReference Include="Tc2_System,newest,Beckhoff Automation GmbH">
+      <Namespace>Tc2_System</Namespace>
+    </LibraryReference>
+    <LibraryReference Include="Tc2_TcpIp,newest,Beckhoff Automation GmbH">
+      <Namespace>Tc2_TcpIp</Namespace>
+    </LibraryReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Documentation\_ChangeLog.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="beckhoff_network.tmc">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="_Documentation\Example.libcat.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="_Documentation\Oscat.libcat.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="_Documentation\oscat_netlib121_en.pdf">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderReference Include="Oscat_Basic">
+      <DefaultResolution>Oscat_Basic, * (Oscat)</DefaultResolution>
+      <Namespace>Oscat_Basic</Namespace>
+    </PlaceholderReference>
+  </ItemGroup>
+  <ProjectExtensions>
+    <PlcProjectOptions>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="OptionKey">
+      <v n="Name">"&lt;ProjectRoot&gt;"</v>
+      <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+        <v>{8F99A816-E488-41E4-9FA3-846536012284}</v>
+        <o>
+          <v n="Name">"{8F99A816-E488-41E4-9FA3-846536012284}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{29BD8D0C-3586-4548-BB48-497B9A01693F}</v>
+        <o>
+          <v n="Name">"{29BD8D0C-3586-4548-BB48-497B9A01693F}"</v>
+          <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+            <v>Rules</v>
+            <o>
+              <v n="Name">"Rules"</v>
+              <d n="SubKeys" t="Hashtable" />
+              <d n="Values" t="Hashtable" />
+            </o>
+          </d>
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{40450F57-0AA3-4216-96F3-5444ECB29763}</v>
+        <o>
+          <v n="Name">"{40450F57-0AA3-4216-96F3-5444ECB29763}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String" cvt="String">
+            <v>ActiveVisuProfile</v>
+            <v>IR0whWr8bwfwBwAAiD2qpQAAAABVAgAA37x72QAAAAABAAAAAAAAAAEaUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwACTHsAZgA5ADUAYgBiADQAMgA2AC0ANQA1ADIANAAtADQAYgA0ADUALQA5ADQAMAAwAC0AZgBiADAAZgAyAGUANwA3AGUANQAxAGIAfQADCE4AYQBtAGUABDBUAHcAaQBuAEMAQQBUACAAMwAuADEAIABCAHUAaQBsAGQAIAA0ADAAMgA0AC4ANwAFFlAAcgBvAGYAaQBsAGUARABhAHQAYQAGTHsAMQA2AGUANQA1AGIANgAwAC0ANwAwADQAMwAtADQAYQA2ADMALQBiADYANQBiAC0ANgAxADQANwAxADMAOAA3ADgAZAA0ADIAfQAHEkwAaQBiAHIAYQByAGkAZQBzAAhMewAzAGIAZgBkADUANAA1ADkALQBiADAANwBmAC0ANABkADYAZQAtAGEAZQAxAGEALQBhADgAMwAzADUANgBhADUANQAxADQAMgB9AAlMewA5AGMAOQA1ADgAOQA2ADgALQAyAGMAOAA1AC0ANAAxAGIAYgAtADgAOAA3ADEALQA4ADkANQBmAGYAMQBmAGUAZABlADEAYQB9AAoOVgBlAHIAcwBpAG8AbgALBmkAbgB0AAwKVQBzAGEAZwBlAA0KVABpAHQAbABlAA4aVgBpAHMAdQBFAGwAZQBtAE0AZQB0AGUAcgAPDkMAbwBtAHAAYQBuAHkAEAxTAHkAcwB0AGUAbQARElYAaQBzAHUARQBsAGUAbQBzABIwVgBpAHMAdQBFAGwAZQBtAHMAUwBwAGUAYwBpAGEAbABDAG8AbgB0AHIAbwBsAHMAEyhWAGkAcwB1AEUAbABlAG0AcwBXAGkAbgBDAG8AbgB0AHIAbwBsAHMAFCRWAGkAcwB1AEUAbABlAG0AVABlAHgAdABFAGQAaQB0AG8AcgAVIlYAaQBzAHUATgBhAHQAaQB2AGUAQwBvAG4AdAByAG8AbAAWFHYAaQBzAHUAaQBuAHAAdQB0AHMAFwxzAHkAcwB0AGUAbQAYGFYAaQBzAHUARQBsAGUAbQBCAGEAcwBlABkmRABlAHYAUABsAGEAYwBlAGgAbwBsAGQAZQByAHMAVQBzAGUAZAAaCGIAbwBvAGwAGyJQAGwAdQBnAGkAbgBDAG8AbgBzAHQAcgBhAGkAbgB0AHMAHEx7ADQAMwBkADUAMgBiAGMAZQAtADkANAAyAGMALQA0ADQAZAA3AC0AOQBlADkANAAtADEAYgBmAGQAZgAzADEAMABlADYAMwBjAH0AHRxBAHQATABlAGEAcwB0AFYAZQByAHMAaQBvAG4AHhRQAGwAdQBnAGkAbgBHAHUAaQBkAB8WUwB5AHMAdABlAG0ALgBHAHUAaQBkACBIYQBmAGMAZAA1ADQANAA2AC0ANAA5ADEANAAtADQAZgBlADcALQBiAGIANwA4AC0AOQBiAGYAZgBlAGIANwAwAGYAZAAxADcAIRRVAHAAZABhAHQAZQBJAG4AZgBvACJMewBiADAAMwAzADYANgBhADgALQBiADUAYwAwAC0ANABiADkAYQAtAGEAMAAwAGUALQBlAGIAOAA2ADAAMQAxADEAMAA0AGMAMwB9ACMOVQBwAGQAYQB0AGUAcwAkTHsAMQA4ADYAOABmAGYAYwA5AC0AZQA0AGYAYwAtADQANQAzADIALQBhAGMAMAA2AC0AMQBlADMAOQBiAGIANQA1ADcAYgA2ADkAfQAlTHsAYQA1AGIAZAA0ADgAYwAzAC0AMABkADEANwAtADQAMQBiADUALQBiADEANgA0AC0ANQBmAGMANgBhAGQAMgBiADkANgBiADcAfQAmFk8AYgBqAGUAYwB0AHMAVAB5AHAAZQAnVFUAcABkAGEAdABlAEwAYQBuAGcAdQBhAGcAZQBNAG8AZABlAGwARgBvAHIAQwBvAG4AdgBlAHIAdABpAGIAbABlAEwAaQBiAHIAYQByAGkAZQBzACgQTABpAGIAVABpAHQAbABlACkUTABpAGIAQwBvAG0AcABhAG4AeQAqHlUAcABkAGEAdABlAFAAcgBvAHYAaQBkAGUAcgBzACs4UwB5AHMAdABlAG0ALgBDAG8AbABsAGUAYwB0AGkAbwBuAHMALgBIAGEAcwBoAHQAYQBiAGwAZQAsEnYAaQBzAHUAZQBsAGUAbQBzAC1INgBjAGIAMQBjAGQAZQAxAC0AZAA1AGQAYwAtADQAYQAzAGIALQA5ADAANQA0AC0AMgAxAGYAYQA3ADUANgBhADMAZgBhADQALihJAG4AdABlAHIAZgBhAGMAZQBWAGUAcgBzAGkAbwBuAEkAbgBmAG8AL0x7AGMANgAxADEAZQA0ADAAMAAtADcAZgBiADkALQA0AGMAMwA1AC0AYgA5AGEAYwAtADQAZQAzADEANABiADUAOQA5ADYANAAzAH0AMBhNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgAxGE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuADIMTABlAGcAYQBjAHkAMzBMAGEAbgBnAHUAYQBnAGUATQBvAGQAZQBsAFYAZQByAHMAaQBvAG4ASQBuAGYAbwA0MEwAbwBhAGQATABpAGIAcgBhAHIAaQBlAHMASQBuAHQAbwBQAHIAbwBqAGUAYwB0ADUaQwBvAG0AcABhAHQAaQBiAGkAbABpAHQAeQDQAAIaA9ADAS0E0AUGGgfQBwgaAUUHCQjQAAkaBEUKCwQDAAAABQAAAA0AAAAAAAAA0AwLrQIAAADQDQEtDtAPAS0Q0AAJGgRFCgsEAwAAAAUAAAANAAAAKAAAANAMC60BAAAA0A0BLRHQDwEtENAACRoERQoLBAMAAAAFAAAADQAAAAAAAADQDAutAgAAANANAS0S0A8BLRDQAAkaBEUKCwQDAAAABQAAAA0AAAAUAAAA0AwLrQIAAADQDQEtE9APAS0Q0AAJGgRFCgsEAwAAAAUAAAANAAAAAAAAANAMC60CAAAA0A0BLRTQDwEtENAACRoERQoLBAMAAAAFAAAADQAAAAAAAADQDAutAgAAANANAS0V0A8BLRDQAAkaBEUKCwQDAAAABQAAAA0AAAAAAAAA0AwLrQIAAADQDQEtFtAPAS0X0AAJGgRFCgsEAwAAAAUAAAANAAAAKAAAANAMC60EAAAA0A0BLRjQDwEtENAZGq0BRRscAdAAHBoCRR0LBAMAAAAFAAAADQAAAAAAAADQHh8tINAhIhoCRSMkAtAAJRoFRQoLBAMAAAADAAAAAAAAAAoAAADQJgutAAAAANADAS0n0CgBLRHQKQEtENAAJRoFRQoLBAMAAAADAAAAAAAAAAoAAADQJgutAQAAANADAS0n0CgBLRHQKQEtEJoqKwFFAAEC0AABLSzQAAEtF9AAHy0t0C4vGgPQMAutAQAAANAxC60XAAAA0DIarQDQMy8aA9AwC60CAAAA0DELrQMAAADQMhqtANA0Gq0A0DUarQA=</v>
+          </d>
+        </o>
+        <v>{A3BBA713-63D7-4de6-BEC2-E3BAAD8789F8}</v>
+        <o>
+          <v n="Name">"{A3BBA713-63D7-4de6-BEC2-E3BAAD8789F8}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{C70B7845-2722-4a9b-A0EA-88C877A4B36F}</v>
+        <o>
+          <v n="Name">"{C70B7845-2722-4a9b-A0EA-88C877A4B36F}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String">
+            <v>EnableMaxAuthenticationTrials</v>
+            <v>true</v>
+            <v>EnableMaxTimeOfInactivity</v>
+            <v>true</v>
+            <v>UserList</v>
+            <o t="UserList">
+              <a n="Users" cet="User">
+                <o>
+                  <v n="Id">{b9a8c16a-1fc2-466f-b665-a63283ba54d5}</v>
+                  <v n="Name">"Owner"</v>
+                  <v n="FullName">""</v>
+                  <v n="Description">""</v>
+                  <v n="Active">true</v>
+                </o>
+              </a>
+            </o>
+            <v>MaxTimeOfInactivity</v>
+            <v>10</v>
+            <v>MaxAuthenticationTrials</v>
+            <v>3</v>
+            <v>EnableNewHashFormat</v>
+            <v>false</v>
+            <v>GroupList</v>
+            <o t="GroupList">
+              <a n="Groups" cet="Group">
+                <o>
+                  <v n="Id">{93a899ac-1c58-4795-950c-b26460d80b29}</v>
+                  <v n="Name">"Everyone"</v>
+                  <v n="Description">""</v>
+                  <v n="IsEveryoneGroup">true</v>
+                  <v n="IsOwnerGroup">false</v>
+                  <l n="UserMembers" t="ArrayList" cet="Guid">
+                    <v>b9a8c16a-1fc2-466f-b665-a63283ba54d5</v>
+                  </l>
+                  <l n="GroupMembers" t="ArrayList" />
+                </o>
+                <o>
+                  <v n="Id">{9d2f2069-762b-4018-a559-2523d348cb6a}</v>
+                  <v n="Name">"Owner"</v>
+                  <v n="Description">""</v>
+                  <v n="IsEveryoneGroup">false</v>
+                  <v n="IsOwnerGroup">true</v>
+                  <l n="UserMembers" t="ArrayList" cet="Guid">
+                    <v>b9a8c16a-1fc2-466f-b665-a63283ba54d5</v>
+                  </l>
+                  <l n="GroupMembers" t="ArrayList" />
+                </o>
+              </a>
+            </o>
+            <v>UserAuthentication</v>
+            <o t="UserAuthentication">
+              <d n="UserToPasswordHash" t="Hashtable" ckt="Guid" cvt="String">
+                <v>b9a8c16a-1fc2-466f-b665-a63283ba54d5</v>
+                <v>d41d8cd98f00b204e9800998ecf8427e</v>
+              </d>
+            </o>
+          </d>
+        </o>
+        <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
+        <o>
+          <v n="Name">"{192FAD59-8248-4824-A8DE-9177C94C195A}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{246001F4-279D-43AC-B241-948EB31120E1}</v>
+        <o>
+          <v n="Name">"{246001F4-279D-43AC-B241-948EB31120E1}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+      </d>
+      <d n="Values" t="Hashtable" />
+    </o>
+        </Data>
+        <TypeList>
+          <Type n="ArrayList">System.Collections.ArrayList</Type>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="Group">{daecd4be-1e2b-4335-a125-4a1ac83ea49f}</Type>
+          <Type n="GroupList">{bf4dffda-f055-446d-9d7a-5f126720896b}</Type>
+          <Type n="Guid">System.Guid</Type>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="Int32">System.Int32</Type>
+          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+          <Type n="String">System.String</Type>
+          <Type n="User">{cd83029e-13b0-491e-9e4b-921adda0d86b}</Type>
+          <Type n="UserAuthentication">{3635a671-97f5-41bb-9e29-0ebb9795975c}</Type>
+          <Type n="UserList">{9fe6b547-6bc8-4f11-b589-b517860c5891}</Type>
+        </TypeList>
+      </XmlArchive>
+    </PlcProjectOptions>
+  </ProjectExtensions>
+</Project>

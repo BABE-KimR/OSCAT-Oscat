@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="ESR_DATA" Id="{b90ad35f-39b4-483d-a96c-9248e43ebe27}">
+    <Declaration><![CDATA[TYPE ESR_DATA :
+STRUCT
+	TYP : BYTE;
+	ADRESS : STRING(10);
+	DS : DT;
+	TS : TIME;
+	DATA : ARRAY[0..7] OF BYTE;
+END_STRUCT
+END_TYPE]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="NET_VAR_DATA" Id="{0dcd99e6-37c0-41a9-bda9-7f6424ace2ac}">
+    <Declaration><![CDATA[TYPE NET_VAR_DATA :
+STRUCT
+	CYCLE : UDINT;
+	STATE : BYTE;
+	INDEX : INT;
+	ID_MAX : USINT;
+	ERROR_ID : BYTE;
+	BUF_SIZE : UINT;
+	S_BUF : NETWORK_BUFFER;
+	R_BUF : NETWORK_BUFFER;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

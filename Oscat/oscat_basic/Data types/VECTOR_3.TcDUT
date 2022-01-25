@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="VECTOR_3" Id="{a1f7b061-0062-4dd4-bc0f-65a269a87f69}">
+    <Declaration><![CDATA[TYPE VECTOR_3 :
+STRUCT
+	X : REAL;
+	Y : REAL;
+	Z : REAL;
+END_STRUCT
+END_TYPE]]></Declaration>
+  </DUT>
+</TcPlcObject>
