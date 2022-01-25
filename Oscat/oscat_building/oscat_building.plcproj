@@ -27,6 +27,8 @@
     </SelectedLibraryCategories>
     <DefaultNamespace>Oscat_Building</DefaultNamespace>
     <Author>Oscat</Author>
+    <CombineIds>true</CombineIds>
+    <PreserveCompiledLibComments>true</PreserveCompiledLibComments>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Data types" />
@@ -37,6 +39,8 @@
     <Folder Include="POUs\HLK" />
     <Folder Include="POUs\Jalousie" />
     <Folder Include="POUs\Other" />
+    <Folder Include="Project Information" />
+    <Folder Include="Version" />
     <Folder Include="_Documentation" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +104,21 @@
     <Compile Include="POUs\Jalousie\BLIND_SHADE.TcPOU" />
     <Compile Include="POUs\Jalousie\BLIND_SHADE_S.TcPOU" />
     <Compile Include="POUs\Other\BUILDING_VERSION.TcPOU" />
+    <Compile Include="Project Information\F_GetCompany.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetTitle.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetVersion.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Version\Global_Version.TcGVL">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <LibraryReference Include="Tc2_Standard,newest,Beckhoff Automation GmbH">

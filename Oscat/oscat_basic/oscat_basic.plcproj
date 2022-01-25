@@ -28,10 +28,13 @@
       <Id xmlns="">{c4f3d7e6-b892-4109-af00-977141051b33}</Id>
     </SelectedLibraryCategories>
     <CombineIds>true</CombineIds>
+    <PreserveCompiledLibComments>true</PreserveCompiledLibComments>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Data types" />
     <Folder Include="Global Variables" />
+    <Folder Include="Project Information" />
+    <Folder Include="Version" />
     <Folder Include="_Documentation" />
     <Folder Include="POUs" />
     <Folder Include="POUs\Buffer Management" />
@@ -625,6 +628,21 @@
     <Compile Include="POUs\Time&amp;Date\YEAR_BEGIN.TcPOU" />
     <Compile Include="POUs\Time&amp;Date\YEAR_END.TcPOU" />
     <Compile Include="POUs\Time&amp;Date\YEAR_OF_DATE.TcPOU" />
+    <Compile Include="Project Information\F_GetCompany.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetTitle.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetVersion.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Version\Global_Version.TcGVL">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <LibraryReference Include="Tc2_Standard,newest,Beckhoff Automation GmbH">
