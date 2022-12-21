@@ -1,10 +1,9 @@
 # Oscat
-This library is a port of the OSCAT libraries to TwinCAT 3.
 
 OSCAT stands for “Open Source Community for Automation Technology”.
-OSCAT creates an Open Source Library referenced to the IEC 61131-3 standard which can be dispensed with vendor-specific functions and therefore ported to all IEC 61131-3 compatible programmable logic controllers. This library is a port of the OSCAT NETWORK library to CODESYS Version 3.
+OSCAT creates an Open Source Library referenced to the IEC 61131-3 standard which can be dispensed with vendor-specific functions and therefore ported to all IEC 61131-3 compatible programmable logic controllers. 
 
-This port contains:
+This repository is a port of the following OSCAT libraries to Beckhoff TwinCAT3.
 * OSCAT BASIC
 * OSCAT NETWORK
 * OSCAT BUILDING
