@@ -31,4 +31,4 @@ The library OSCAT BASIC contains functions to following subjects:
 * Electro technology
 * Jalousie control
 
-Official http://www.oscat.de/en
+Official site: http://www.oscat.de/en
