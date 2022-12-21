@@ -199,8 +199,10 @@ PublishScripts/
 #*.snupkg
 # The packages folder can be ignored because of Package Restore
 #**/[Pp]ackages/*
+# The Beckhoff packages in the packages folder can be ignored because of Package Restore
+**/[Pp]ackages/Beckhoff.TwinCAT.HMI*
 # except build/, which is used as an MSBuild target.
-#!**/[Pp]ackages/build/
+!**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/[Pp]ackages/repositories.config
 # NuGet v3's project.json files produces more ignorable files
@@ -410,6 +412,9 @@ FodyWeavers.xsd
 #   2. You've created a standalone PLC-project and added events to it, as these are stored in the TMC-file.
 # *.tmc
 plc.tmc
+oscat_basic.tmc
+oscat_beckhoff_network.tmc
+oscat_building.tmc
 *.tmcRefac
 *.library
 *.project.~u
@@ -421,6 +426,3 @@ _Boot/
 _CompileInfo/
 _Libraries/
 _ModuleInstall/
-Oscat/beckhoff_network/beckhoff_network.tmc
-Oscat/oscat_basic/oscat_basic.tmc
-Oscat/oscat_building/oscat_building.tmc
